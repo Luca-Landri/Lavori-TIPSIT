@@ -1,0 +1,126 @@
+/* INIZIO VIEWPORT SECTION */
+* {
+  margin: 0px;
+}
+
+.viewport {
+  background-image: url("../IMAGE/test.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.viewport::before {
+  background: linear-gradient(rgba(119, 119, 119, 0.6) 0%, rgba(248, 248, 248, 0) 100%);
+  content: "";
+  display: inline-block;
+  height: 100vh;
+  width: 100%;
+}
+/* FINE VIEWPORT SECTION */
+
+/* INIZIO NAVBAR */
+nav {
+  display: flex;
+  margin-right: 1.8%;
+  margin-right: 1.8%;
+}
+
+.Left-item {
+  flex-grow: 1;
+  margin-left: 2%;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: #fff;
+  margin-left: 2.9%;
+  font-style: bold;
+  font-family: 'Merriweather', serif;
+}
+
+.nav-item.contact {
+  margin-right: 1.8%;
+}
+
+.nav-bar {
+  position: absolute;
+  top: 2%;
+  width: 100%;
+  align-items: center;
+}
+/* FINE NAVBAR */
+
+/* INIZIO CONTAINER */
+.container {
+  top: 32%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.title {
+  color: #fff;
+  font-family: 'Merriweather', serif;
+  /*font-size: 500%;*/
+  font-size: 4.5vw;
+  border-top: 3px solid #343434;
+  border-bottom: 3px solid #343434;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.subtitle {
+  color: #fff;
+  /*font-size: 187.5%;*/
+  font-size: 1.7vw;
+  padding-top: 2.6%;
+  text-align: center;
+  font-family: 'Crimson Text', serif;
+}
+
+.continue-button {
+  font-family: "Merriweather", sans-serif;
+  width: 20vw;
+  height: 64px;
+  border-radius: 15px;
+  font-size: 1.7vw;
+  color: #080C71;
+  border-color: #fff;
+  font-weight: bold;
+  border: 1px solid #707070;
+  margin-top: 11.3%;
+}
+
+.container-button {
+  border-top: 3px solid #fff;
+  margin-top: 2.1%;
+  width: 20vw;
+}
+/* FINE CONTAINER */
+
+/* INIZIO FOOTER */
+
+footer {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-logo.youtube {
+  padding-right: 1.9%;
+}
+
+.footer-logo {
+  padding-left: 3.3%;
+  padding-bottom: 1.6%;
+}
+/* FINE FOOTER */
