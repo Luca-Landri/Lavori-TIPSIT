@@ -1,0 +1,76 @@
+.button.dark-blue-button {
+  margin-right: 0px;
+}
+
+.latest-season {
+  padding-top: 53px;
+  padding-bottom: 46px;
+}
+
+.latest-season .dark-blue-button {
+  padding: 12px 46px;
+}
+
+@media screen and (max-width: 1023px) {
+  .latest-season {
+    padding-bottom: 125px;
+    padding-top: 35px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .dark-blue-button {
+    background-color: white;
+  }
+
+  .latest-season .dark-blue-button {
+    padding: 0px;
+  }
+
+  .dark-blue-button a {
+    color: #E00000;
+  }
+}
+
+div h3 {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+div h4 {
+  padding-bottom: 10px;
+}
+
+div h2 {
+  padding-bottom: 10px;
+}
+
+.latest-season div p {
+  font-size: 46px;
+}
+
+@media screen and (max-width: 1023px) {
+  .latest-season div p {
+    font-size: 28px;
+  }
+}
+
+.latest-season .dark-blue-button {
+  font-size: 16px;
+}
+
+.l-single-element {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.f-s-24 {
+  font-size: 24px;
+}
+
+@media screen and (max-width: 1023px) {
+  .season-text {
+    display: none;
+
+  }
+}

@@ -1,0 +1,57 @@
+.titles {
+  padding-top: 239px;
+}
+
+@media screen and (max-width: 1023px) {
+  .titles {
+    padding-top: 450px;
+  }
+}
+
+div h2 {
+  font-size: 52px;
+  line-height: 60px;
+}
+
+@media screen and (max-width: 1023px) {
+  div h2 {
+    font-size: 34px;
+    line-height: 51px;
+  }
+}
+
+.titles {
+  max-width: 400px;
+	flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (min-width: 1023px) {
+  .titles {
+    max-width: 690px;
+	  flex-direction: column;
+  	justify-content: center;
+  }
+
+
+}
+
+.titleLine{
+	flex-direction: column;
+	justify-content: center;
+
+}
+
+.lineTitle h4{
+	position: relative;
+	padding-left: 30.5px;
+}
+
+.lineTitle h4::before{
+	content:"";
+	position: absolute;
+	top: 6px;
+	left: 0;
+	width: 25px;
+	height: 1px;
+	background-color: #FF5300;

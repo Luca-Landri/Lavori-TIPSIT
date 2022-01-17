@@ -1,0 +1,539 @@
+@import url('font-color.css');
+@import url('playbar.css');
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  box-sizing: border-box;
+}
+
+header {
+  align-items: center;
+  padding: 10px;
+}
+.p-14{
+  padding-left: 14px;
+}
+.j-c-space-between {
+  justify-content: space-between;
+}
+
+.gocast-text {
+  padding-left: 1.7px;
+}
+
+@media screen and (max-width: 1023px) {
+  .gocast-text {
+    display: none;
+  }
+}
+
+.button-txt {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1023px) {
+  .button-txt {
+    font-size: 16px;
+  }
+}
+
+.button {
+  padding: 12px 23px;
+  margin-right: 15px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 1023px) {
+  .button.blue-button {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .button {
+    border-radius: 0px;
+  }
+}
+
+.p-navbar {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.mic-img {
+  padding-left: 15px;
+}
+
+@media screen and (max-width: 1023px) {
+  .mic-img {
+    padding-left: 5px;
+  }
+}
+/* --------------------------------- HERO --------------------------------------- */
+.hero {
+  background-image: url("../Images/concerto rock.png");
+  background-repeat: no-repeat;
+  position: relative;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-position: right;
+  background-size: cover;
+  min-height: 93vh;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 1023px) {
+  .hero {
+    justify-content: center;
+  }
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgba(41, 41, 41, 0.71) 100%);
+  ackground: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(41,41,41,0.71) 100%);
+  opacity: 0.6;
+}
+
+
+.hero * {
+  z-index: 1;
+}
+/* --------------------------------- HERO --------------------------------------- */
+
+
+/* --------------------------------- TITLES --------------------------------------- */
+
+.titles {
+  padding-top: 239px;
+}
+
+@media screen and (max-width: 1023px) {
+  .titles {
+    padding-top: 450px;
+  }
+}
+
+div h2 {
+  font-size: 52px;
+  line-height: 60px;
+}
+
+@media screen and (max-width: 1023px) {
+  div h2 {
+    font-size: 34px;
+    line-height: 51px;
+  }
+}
+
+.titles {
+  max-width: 400px;
+	flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (min-width: 1023px) {
+  .titles {
+    max-width: 690px;
+	  flex-direction: column;
+  	justify-content: center;
+  }
+
+
+}
+
+.titleLine{
+	flex-direction: column;
+	justify-content: center;
+
+}
+
+.lineTitle h4{
+	position: relative;
+	padding-left: 30.5px;
+}
+
+.lineTitle h4::before{
+	content:"";
+	position: absolute;
+	top: 6px;
+	left: 0;
+	width: 25px;
+	height: 1px;
+	background-color: #FF5300;
+}
+/* --------------------------------- TITLES --------------------------------------- */
+
+
+/* --------------------------------- SEASON --------------------------------------- */
+
+.button.dark-blue-button {
+  margin-right: 0px;
+}
+
+.latest-season {
+  padding-top: 53px;
+  padding-bottom: 46px;
+}
+
+.latest-season .dark-blue-button {
+  padding: 12px 46px;
+}
+
+@media screen and (max-width: 1023px) {
+  .latest-season {
+    padding-bottom: 125px;
+    padding-top: 35px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .dark-blue-button {
+    background-color: white;
+  }
+
+  .latest-season .dark-blue-button {
+    padding: 0px;
+  }
+
+  .dark-blue-button a {
+    color: #E00000;
+  }
+}
+
+div h3 {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+div h4 {
+  padding-bottom: 10px;
+}
+
+div h2 {
+  padding-bottom: 10px;
+}
+
+.latest-season div p {
+  font-size: 46px;
+}
+
+@media screen and (max-width: 1023px) {
+  .latest-season div p {
+    font-size: 28px;
+  }
+}
+
+.latest-season .dark-blue-button {
+  font-size: 16px;
+}
+
+.l-single-element {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.f-s-24 {
+  font-size: 24px;
+}
+
+@media screen and (max-width: 1023px) {
+  .season-text {
+    display: none;
+
+  }
+}
+/* --------------------------------- SEASON --------------------------------------- */
+
+/*------------------------PLAYBAR SECTION---------------------------*/
+
+.flexContainer{
+      display: flex;
+      max-width: 600px;
+      align-items: center;
+    }
+
+    .playBar{
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      margin: 0 5px;
+      height: 30px;
+    }
+
+    .totalDuration{
+      width: 100%;
+      height: 5px;
+      position: absolute;
+      background: #DBDBDB;
+      border-radius: 2px;
+    }
+
+    .playedDuration{
+      background: #FF5300;
+      height: 5px;
+      border-radius: 2px;
+      width:25%;
+      z-index: 1;
+    }
+
+    .currentPosition{
+      width: 30px;
+      height: 30px;
+      background: #fff;
+      border-radius: 15px;
+      position: absolute;
+      z-index: 2;
+      left: 25%;
+      margin-left: -15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .currentPosition::after{
+      content: "";
+      top: 0;
+      left: 0;
+      width: 8px;
+      height: 8px;
+      border-radius: 4px;
+      background: #FF5300;
+    }
+
+
+/*------------------------PLAYBAR SECTION---------------------------*/
+
+.p-b-20 {
+  padding-bottom: 20px;
+}
+
+.p-b-25 {
+  padding-bottom: 25px;
+}
+
+.p-r-10 {
+  padding-right: 10px;
+}
+
+.p-r-17 {
+  padding-right: 17px;
+}
+
+.p-l-30 {
+  padding-left: 30px;
+}
+
+.p-b-16 {
+  padding-bottom: 16px;
+}
+
+.f-s-12 {
+  font-size: 12px;
+}
+
+@media screen and (max-width: 1023px) {
+  .row .col-sm-3 .img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 575px) {
+  .sm-txt {
+    display: none;
+  }
+}
+
+.sm-txt {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 576px) {
+  .l-single-element .f-s-24 {
+    display: none;
+  }
+}
+
+.s-l-season {
+  line-height: 23px;
+}
+
+@media screen and (min-width: 1023px) {
+  .s-l-season {
+    line-height: 26px;
+  }
+}
+
+.p-b-10 {
+  padding-bottom: 10px;
+}
+
+.single-element {
+  padding-bottom: 25px;
+}
+
+.m-title {
+  padding-top: 52px;
+}
+
+@media screen and (max-width: 1023px) {
+  .m-title .fs-52 {
+    font-size: 28px;
+  }
+}
+
+.card-img {
+  width: 100%;
+}
+
+.m-card::before {
+  content: "";
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(41, 41, 41, 0.56) 100%);
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.m-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  border: 1px solid #707070;
+}
+
+.card-title {
+  position: absolute;
+  bottom: 10px;
+  right: 13px;
+  text-align: right;
+  z-index: 1;
+}
+
+.col-sm-3 .m-card {
+  margin-top: 25px;
+}
+
+.col-sm-9 .m-card {
+  margin-top: 25px;
+}
+
+.r-more .dark-blue-button {
+  padding: 12px 34px;
+}
+
+@media screen and (max-width: 1023px) {
+  .dark-blue-button.button.white-text {
+    color: #E00000;
+    font-size: 24px;
+  }
+
+
+}
+
+@media screen and (max-width: 576px) {
+  .r-more.d-flex.align-i {
+    justify-content: center;
+    padding-top: 45px;
+  }
+
+
+}
+
+.r-more {
+  margin-top: 15px;
+  margin-bottom: 185.5px;
+}
+
+.fg-1 {
+  flex-grow: 1;
+}
+
+.f-logo {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-top: 2px solid #707070;
+}
+
+.footer {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.f-img-logo {
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding-right: 20.6px;
+}
+
+@media screen and (max-width: 576px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .f-logo {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+}
+
+.p-b-20 {
+  padding-bottom: 0px;
+}
+
+@media screen and (max-width: 576px) {
+  .p-b-20 {
+    padding-bottom: 20px;
+  }
+
+}
+
+.di-none {
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  .di-none {
+    display: flex;
+  }
+
+}
+
+
+.sm-6-img {
+  display: flex;
+}
+
+@media screen and (max-width: 576px) {
+  .sm-6-img {
+    display: none;
+  }
+
+}

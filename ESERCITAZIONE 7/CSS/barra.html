@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>puttana eva</title>
+	<style type="text/css">
+		*{margin: 0;}
+		.flexContainer{
+			display: flex;
+			max-width: 600px;
+			background: lightblue;
+			align-items: center;
+		}
+
+		.playBar{
+			flex-grow: 1;
+			background: green;
+			position: relative;
+			display: flex;
+			align-items: center;
+			margin: 0 5px;
+			height: 30px;
+		}
+
+		.totalDuration{
+			width: 100%;
+			height: 5px;
+			position: absolute;
+			background: #DBDBDB;
+			border-radius: 2px;
+		}
+
+		.playedDuration{
+			background: #FF5300;
+			height: 5px;
+			border-radius: 2px;
+			width:25%;
+			z-index: 1;
+		}
+
+		.currentPosition{
+			width: 30px;
+			height: 30px;
+			background: #fff;
+			border-radius: 15px;
+			position: absolute;
+			z-index: 2;
+			left: 25%;
+			margin-left: -15px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.currentPosition::after{
+			content: "";
+			top: 0;
+			left: 0;
+			width: 8px;
+			height: 8px;
+			border-radius: 4px;
+			background: #FF5300;	
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="flexContainer">
+		<a href="#" class="playBtn">Play Button</a>
+		<span>26.00</span>
+		<div class="playBar">
+			<div class="currentPosition"></div>
+			<div class="totalDuration"></div>
+			<div class="playedDuration"></div>
+		</div>
+		<span>43.25</span>
+		<a href="#">Volume Icon</a>
+		<a href="#">Download Icon</a>
+	</div>
+</body>
+</html>

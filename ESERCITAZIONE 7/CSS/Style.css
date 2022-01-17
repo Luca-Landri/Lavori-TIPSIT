@@ -1,0 +1,161 @@
+* {
+  margin: 0px;
+}
+
+.danger-text {
+  color: #FF5503;
+}
+
+.dark-text {
+  color : black;
+}
+
+.light-text {
+  color : #777777;
+}
+
+.white-text {
+  color: #fff;
+}
+
+.Newsreader {
+  font-family: 'Newsreader', serif;
+  font-weight: normal;
+}
+
+.Josefin-Sans-Semibold {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+}
+
+.Josefin-Sans-Bold {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+}
+
+.Josefin-Sans-regular {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: normal;
+}
+
+.warning {
+  background-color: #E9C46A;
+}
+
+.header {
+  height: 57px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.up-title {
+  padding-top: 239px;
+  padding-bottom: 10px;
+}
+
+.title {
+  font-size: 52px;
+  line-height: 60px;
+}
+
+@media screen and (max-width: 576px) {
+  .gocast-text {
+    opacity: 0%;
+  }
+
+  .yellow-button {
+    border-radius: 0px;
+  }
+
+  .title {
+    font-size: 34px;
+    line-height: 51px;
+  }
+
+  .blue-button {
+    border-radius: 0px;
+  }
+
+  .dark-blue-button {
+    background-color: white;
+  }
+
+  .l-title {
+    font-size: 28px;
+  }
+
+}
+
+.gocast-text {
+  padding-left: 1.7px;
+}
+
+.subtitle {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.yellow-button {
+  background-color: #F4A261;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 12px 20px;
+  margin-right: 20px;
+}
+
+.blue-button {
+  background-color: #2A9D8F;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 12px 20px;
+  margin-right: 20px;
+}
+
+.dark-blue-button {
+  background-color: #264653;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 46px;
+  margin-right: 138px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.pos-relative {
+  position: relative;
+}
+
+.align-i {
+  align-items: center;
+}
+
+.mic-img {
+  padding-left: 20px;
+}
+
+.hero {
+  background-image: url("../Images/concerto rock.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  min-height: 93vh;
+  margin: 0px;
+}
+
+.latest-season {
+  padding-top: 53px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.l-title {
+  font-size: 46px;
+  padding-left: 138px;
+}

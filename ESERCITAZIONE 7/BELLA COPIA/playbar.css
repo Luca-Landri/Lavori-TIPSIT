@@ -1,0 +1,54 @@
+.flexContainer{
+			display: flex;
+			max-width: 600px;
+			align-items: center;
+		}
+
+		.playBar{
+			flex-grow: 1;
+			position: relative;
+			display: flex;
+			align-items: center;
+			margin: 0 5px;
+			height: 30px;
+		}
+
+		.totalDuration{
+			width: 100%;
+			height: 5px;
+			position: absolute;
+			background: #DBDBDB;
+			border-radius: 2px;
+		}
+
+		.playedDuration{
+			background: #FF5300;
+			height: 5px;
+			border-radius: 2px;
+			width:25%;
+			z-index: 1;
+		}
+
+		.currentPosition{
+			width: 30px;
+			height: 30px;
+			background: #fff;
+			border-radius: 15px;
+			position: absolute;
+			z-index: 2;
+			left: 25%;
+			margin-left: -15px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.currentPosition::after{
+			content: "";
+			top: 0;
+			left: 0;
+			width: 8px;
+			height: 8px;
+			border-radius: 4px;
+			background: #FF5300;
+		}

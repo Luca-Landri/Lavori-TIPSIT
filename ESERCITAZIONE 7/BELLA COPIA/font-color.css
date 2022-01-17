@@ -1,0 +1,112 @@
+.danger-text {
+  color: #FF5503;
+}
+
+.dark-text {
+  color : black;
+}
+
+.light-text {
+  color : #777777;
+}
+
+.season-text {
+ color: #C2C2C2;
+}
+
+.white-text {
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.pl-20 {
+  padding-left: 20px;
+}
+
+.warning {
+  background-color: #E9C46A;
+}
+
+.yellow-button {
+  background-color: #F4A261;
+}
+
+.blue-button {
+  background-color: #2A9D8F;
+}
+
+.dark-blue-button {
+  background-color: #264653;
+}
+
+.Newsreader {
+  font-family: 'Newsreader', serif;
+}
+
+.f-w-n {
+  font-weight: normal;
+}
+
+.Josefin-Sans-Semibold {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.f-w-600 {
+  font-weight: 600;
+}
+
+.Josefin-Sans-Bold {
+  font-family: 'Josefin Sans', sans-serif;
+ 
+}
+.f-w-700{
+  font-weight: 700;
+}
+
+.Josefin-Sans-regular {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.Roboto-regular {
+  font-family: 'Roboto', sans-serif;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.pos-relative {
+  position: relative;
+}
+
+
+.align-i {
+  align-items: center;
+}
+
+.fs-52 {
+  font-size: 52px;
+}
+
+.zi-0 {
+  z-index: 0;
+}
+
+.pos-absolute {
+  position: absolute;
+}
+
+.fs-24 {
+  font-size: 24px;
+}
+
+.container > .row > .col-2-5 {
+  flex-basis: calc(100%/4);
+  flex-grow: 0;
+  flex-shrink: 0;
+  padding: 0 8px;
+  box-sizing: border-box;
+}
